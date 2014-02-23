@@ -1,4 +1,0 @@
-StarterKit
-==========
-
-Drupal Startkit
