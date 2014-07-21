@@ -5,12 +5,461 @@
  * When you turn on CSS aggregation at admin/config/development/performance, all
  * of these @include files will be combined into a single file.
  */
+/**
+ * Fonts
+ */
+/* 70px */
+/* 64px */
+/* 60px */
+/* 56px */
+/* 50px */
+/* 42px */
+/* 40px */
+/* 36px */
+/* 34px */
+/* 30px */
+/* 26px */
+/* 24px */
+/* 22px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 14px */
+/* 14px */
+/* 13px */
+/* 12px */
+/* 11px */
+/*
+ * Colors
+ */
+/*
+ * Mixins
+ */
+/*
+ * Nesting
+ */
+/* line 111, ../sass/_constant.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* HTML element (SMACSS base) rules */
-@import "normalize.css";
-@import "components/misc.css";
-@import "fonts.css";
-@import "STARTERKIT.css";
-@import "respond.css";
-@import "print.css";
+/*
+ * Icon Fonts
+ */
+/* line 2, ../sass/_normalize.scss */
+html {
+  font-size: 0.8125em;
+  line-height: 2em;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
+/* line 3, ../sass/_normalize.scss */
+body {
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+  font-size: 100%;
+  color: #717171;
+  line-height: 2em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 4, ../sass/_normalize.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 6, ../sass/_normalize.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 7, ../sass/_normalize.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 8, ../sass/_normalize.scss */
+li {
+  list-style: none;
+}
+
+/* line 9, ../sass/_normalize.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 10, ../sass/_normalize.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  line-height: 100%;
+  font-weight: normal;
+}
+
+/* line 11, ../sass/_normalize.scss */
+h1 {
+  font-size: 200%;
+}
+
+/* line 12, ../sass/_normalize.scss */
+h2 {
+  font-size: 153.84615%;
+}
+
+/* line 13, ../sass/_normalize.scss */
+h3 {
+  font-size: 123.07692%;
+}
+
+/* line 14, ../sass/_normalize.scss */
+h4 {
+  font-size: 107.6923%;
+}
+
+/* line 15, ../sass/_normalize.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 16, ../sass/_normalize.scss */
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* line 17, ../sass/_normalize.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 18, ../sass/_normalize.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 19, ../sass/_normalize.scss */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* line 20, ../sass/_normalize.scss */
+input, textarea, select {
+  font-size: 100%;
+}
+
+/* line 21, ../sass/_normalize.scss */
+legend {
+  color: #000;
+}
+
+/* line 22, ../sass/_normalize.scss */
+.item-list ul li {
+  margin: 0;
+}
+
+/* line 23, ../sass/_normalize.scss */
+.clearer {
+  clear: both;
+}
+
+/* line 24, ../sass/_normalize.scss */
+* html .clearfix {
+  height: 1%;
+  overflow: visible;
+}
+
+/* line 25, ../sass/_normalize.scss */
+* + html .clearfix {
+  min-height: 1%;
+}
+
+/* line 26, ../sass/_normalize.scss */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 27, ../sass/_normalize.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 28, ../sass/_normalize.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* line 29, ../sass/_normalize.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Override for admin menu theme */
+/* line 33, ../sass/_normalize.scss */
+body.admin-menu {
+  margin-top: 29px !important;
+}
+
+/* ------------------------------ */
+/* MAIN LAYOUT 
+/* ------------------------------ */
+/* line 7, ../sass/_application.scss */
+body {
+  color: #000;
+  font-size: 62.5%;
+}
+
+/* line 8, ../sass/_application.scss */
+#page {
+  margin: 0 auto;
+}
+
+/* line 11, ../sass/_application.scss */
+#content {
+  position: relative;
+}
+
+/* ------------------------------ */
+/* HTML ELEMENTS
+/* ------------------------------ */
+/* line 23, ../sass/_application.scss */
+p, ul, ol {
+  line-height: 1.5em;
+  font-size: 1.4em;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+/* line 24, ../sass/_application.scss */
+ul, ol {
+  margin-left: 1em;
+  padding: 0;
+}
+
+/* line 25, ../sass/_application.scss */
+p:last-child, ul:last-child, ol:last-child {
+  margin-bottom: 0;
+}
+
+/* line 26, ../sass/_application.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 27, ../sass/_application.scss */
+ul li, ol li {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 30, ../sass/_application.scss */
+ul p, ol p,
+ul ul,
+ol ol {
+  font-size: 1em;
+}
+
+/* line 31, ../sass/_application.scss */
+ul ul {
+  list-style: none;
+}
+
+/* line 33, ../sass/_application.scss */
+a {
+  color: #000;
+  outline: none;
+}
+
+/* line 34, ../sass/_application.scss */
+a:active {
+  outline: none;
+}
+
+/* line 35, ../sass/_application.scss */
+a:link {
+  outline: none;
+}
+
+/* line 36, ../sass/_application.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 37, ../sass/_application.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 39, ../sass/_application.scss */
+.transition {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+/* DRUPAL OVERRIDES
+----------------------------------*/
+/* line 44, ../sass/_application.scss */
+#admin-menu .dropdown li {
+  font-size: 9px;
+}
+
+/* line 45, ../sass/_application.scss */
+div.messages {
+  font-size: 1em;
+}
+
+/* line 47, ../sass/_application.scss */
+div.messages p,
+div.messages ul {
+  font-size: 1em;
+}
+
+/* line 49, ../sass/_application.scss */
+ul.tabs-primary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  background: none;
+}
+
+/* line 50, ../sass/_application.scss */
+ul.tabs-primary li {
+  margin: 0;
+  padding: 0 1px 0 0;
+  border: none;
+  background: none;
+  text-shadow: none;
+  border-radius: 0;
+  list-style: none;
+  float: left;
+}
+
+/* line 51, ../sass/_application.scss */
+ul.tabs-primary li a {
+  border: none;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  border-radius: 0;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+/* line 52, ../sass/_application.scss */
+ul.tabs-primary li a:hover {
+  opacity: 0.6;
+}
+
+/* ------------------------------ */
+/* PAGE ELEMENTS
+/* ------------------------------ */
+/*
+----------------------------------*/
+/* ------------------------------ */
+/* CONTENT TYPES
+/* ------------------------------ */
+/*
+----------------------------------*/
+/* ------------------------------ */
+/* VIEWS
+/* ------------------------------ */
+/* GLOBAL VIEW STYLES
+----------------------------------*/
+/* line 77, ../sass/_application.scss */
+.views-row {
+  position: relative;
+}
+
+/* line 78, ../sass/_application.scss */
+.views-field-edit-node a {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  font-size: .9em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 8px;
+  text-decoration: none;
+  z-index: 2;
+  line-height: 1;
+  color: #fff;
+  background: #000;
+  display: inline;
+  height: auto;
+}
+
+/* line 79, ../sass/_application.scss */
+.views-field-edit-node a:hover {
+  opacity: 0.6;
+}
+
+/*
+----------------------------------*/
+/* ------------------------------ */
+/* DESKTOP LARGE
+/* ------------------------------ */
+@media (max-width: 1600px) {
+  /* MAIN LAYOUT 
+  /* ------------------------------ */
+  /* HTML
+  /* ------------------------------ */
+  /* PAGE ELEMENTS
+  /* ------------------------------ */
+  /* CONTENT TYPES
+  /* ------------------------------ */
+  /* VIEWS
+  /* ------------------------------ */
+}
+/* ------------------------------ */
+/* TABLET
+/* ------------------------------ */
+@media (max-width: 1024px) {
+  /* MAIN LAYOUT 
+  /* ------------------------------ */
+  /* HTML
+  /* ------------------------------ */
+  /* PAGE ELEMENTS
+  /* ------------------------------ */
+  /* CONTENT TYPES
+  /* ------------------------------ */
+  /* VIEWS
+  /* ------------------------------ */
+}
+/* ------------------------------ */
+/* MOBILE
+/* ------------------------------ */
+@media (max-width: 740px) {
+  /* MAIN LAYOUT 
+  /* ------------------------------ */
+  /* HTML
+  /* ------------------------------ */
+  /* PAGE ELEMENTS
+  /* ------------------------------ */
+  /* CONTENT TYPES
+  /* ------------------------------ */
+  /* VIEWS
+  /* ------------------------------ */
+}

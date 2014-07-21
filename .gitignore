@@ -6,3 +6,4 @@ sites/*/files
 sites/*/private
 cache
 tmp
+sites/all/themes/STARTERKIT/.sass-cache
