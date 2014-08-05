@@ -38,11 +38,6 @@ $s11: 85%;          /* 11px */
 /*
  * Colors
  */
-$grey_0: #222222;
-$grey_1: #eeeeee;
-$grey_2: #717171;
-$grey_3: #3e3e3e;
-$grey_4: #c8c8c8;
 
 
 
@@ -54,15 +49,6 @@ $grey_4: #c8c8c8;
     max-width: $width;
 }
 
-
-@mixin font($font,$size,$color: $grey_0,$lineheight:$base-line-height,$weight:normal,$style:normal) {
-    font-family: $font;
-    font-size: $size;
-    color: $color;
-    line-height: $lineheight;
-    font-weight: $weight;
-    font-style: $style;
-}
 
 @mixin cornerborder ($radius){
     -webkit-border-radius: $radius;
