@@ -130,3 +130,19 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+
+function STARTERKIT_block_render ($module, $block_id){
+
+    $block = block_load($module, $block_id);
+    
+    $block_content = _block_render_blocks(array($block));
+    
+    $build = _block_get_renderable_array($block_content);
+    
+    $block_rendered = drupal_render($build);
+    
+    return $block_rendered;
+    
+ 
+}
